@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Textual Affects</title>
+  <style type="text/css">
+   #menu { width: 100px; height: 400px ;}
+   ul { height: 400px; }
+   ul { list-style-type: none; }
+   li { line-height: 2em ;}
+
+   /* Add a rule to make the screen door see-through and some color. */
+   div.screen-door {
+    background-color: hsla(248, 82%, 74%, 1);
+    opacity: 0.65;
+   }
+
+   /* Add a rule to make the Menu area have some background image(s). */
+   #menu {
+    background: url("http://lorempixel.com/100/400/city/") no-repeat;
+    background-size: cover;
+   }
+
+   /* Add a rule to change letter case, and text wrapping as appropriate. */
+   ul { word-break: loose; }
+
+   /* Change the font color as needed, bonus points for using a CSS3 color. */
+   #menu ul li { color: hsla(360, 95%, 35%, 1);}
+
+   /* Add a text shadow the menu text */
+   #menu ul li { text-shadow: 2px 2px 2px black; }
+
+   /* On hover change the font color or weight. */
+   #menu ul li:hover { font-weight: 500;}
+
+   /* If you dont like supercalifradulis (whatever), figure out a way to hide
+      it or tell me how to set a word wrap in current browsers :(. Hide it using a CSS3 selector.
+    */
+   #eww:only-type-of { display: none;}
+
+   /******************************************/
+
+    /*
+      Bonus Points: For any CSS3 option, assure a non-CSS3 value is provided
+      for "legacy" or non-compatible browsers. Also if you like use a custom
+      non-standard font
+    */
+
+  </style>
+</head>
+<body>
+<h1>Textual Affects</h1>
+<p class="directions">Make this "menu" have affects, text shadowing, change color on hover. Make the text links sit on top of an image with an transparent
+color overlay.</p>
+<div id="menu">
+  <div class="screen-door">
+    <ul>
+      <li class="item">huey</li>
+      <li class="item">duey</li>
+      <li class="item">luey</li>
+      <li id="eww">supercalifragilisticexpialidocious</li>
+      <li class="item">banana</li>
+      <li class="item">ramma</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CoderDeck Sample</title>
+    <meta name="viewport" content="width=1024">
+
+    <link rel="stylesheet" href="dist/coderdeck-core.min.css" type="text/css">
+    <link rel="stylesheet" id='style-theme-link' href="dist/coderdeck.css" type="text/css" >
+    <link rel="stylesheet" id='wsg-theme-link' href="dist/wsg.css"
+    type="text/css">
+
+    <script src='dist/jquery.min.js'></script>
+    <script src="dist/modernizr.js"></script>
+    <style type="text/css">
+        img.snazzy {
+            margin: 0 auto 0 auto;
+            -webkit-mask-size: cover;
+            -webkit-mask-image: -webkit-mask-image: radial-gradient(50% 50%, black 20%, red 100%);
+
+        }
+    </style>
+</head>
+<body class="deck-container">
+
+<script type='text/coderdeck' id='coderdeck-default'>
+  <html>
+    <head>
+      <script src='dist/jquery.min.js'>SCRIPTEND
+    </head>
+    <body>
+	    CODE
+    </body>
+</html>
+</script>
+
+<script type='text/coderdeck' id='coderdeck-style-example'>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>TGIF</title>
+        <link rel="stylesheet" href="/style.css">
+        <script src="script.js">SCRIPTEND
+</head>
+<body>
+<!-- page content -->
+<h1>Hello World!</h1>
+<nav>
+    <a href="http://www.google.com/">Google Search</a>
+    <a href="http://www.yahoo.com/">Yahoo Search</a>
+</nav>
+<p>All Your Base R Belong to Us!</p>
+</body>
+</html>
+</script>
+
+<script type='text/coderdeck' id='coderdeck-wsg-substring'>
+  <html>
+    <head>
+      <script src='dist/jquery.min.js'>SCRIPTEND
+      <style type="text/css">CODE</style>
+    </head>
+<body>
+<h1>Substring Tasks</h1>
+<p class="directions">
+In the following section of text make the following alterations:
+<ul>
+<li>Make any link with the text "ucsb" in it 1 of the UCSB color(s): #0039A6, #00338E, #FFC82E </li>
+<li>In all http:// links below make the external gif (<img src="https://www.boonebank.com/uploadedImages/Global/icon_externalLink.gif"/>)appear after the link.</li>
+<li>In all links below ending in pdf make the pdf icon appear (<img src="http://www.psychologicalselfhelp.org/Chapter5/pdf.gif"/>).</li>
+</ul>
+</p>
+<h2>Sample Content</h2>
+<p class="task">
+Commander William Riker of the Starship Enterprise. Sure. You'd be surprised how far a hug goes with Geordi, or Worf. Well, I'll say this for him - he's sure of himself. In all trust, there is the possibility for betrayal. A lot of things can change in twelve years, Admiral. I've had twelve years to think about it. And if I had it to do over again, I would have grabbed the <a href="//foo.html">phaser and pointed</a> it at you instead of them. My oath is between Captain Kargan and myself. Your only concern is with how you obey my orders. Or do you prefer the rank of prisoner to that of <a href="http://www.ucsb.edu/">lieutenant</a>? Smooth as an android's bottom, eh, Data? Ensign Babyface! When has justice ever been as simple as a rule book?
+</p>
+<p>
+<a href="http://www.ucla.edu/">Mr. Worf</a>, you sound like a man who's asking his friend if he can start dating his sister. Captain, why are we out here chasing comets? How long can two people talk about nothing? I'd like to think that I haven't changed those things, sir. Mr. Worf, you do remember how to fire <a href="/path/to/some/file.pdf">phasers?</a> I'll be sure to note that in my log. And blowing into maximum warp speed, you appeared for an instant to be in two places at once. Your shields were failing, sir. Computer, <a href="/path/to/some/file.pdf">lights up!</a> I recommend you don't fire until you're within 40,000 kilometers. Wait a minute - you've been declared dead. You can't give orders around here. I suggest you drop it, Mr. Data.
+</p>
+</body>
+</html>
+</script>
+
+
+
+<article class='slide slide-subhead'>
+    <div>
+    <h1>CSS3<br>
+    Lightning Talk</h1>
+    <h2>UCSB WSG Presentation<br>May 02, 2014</h2>
+    </div>
+</article>
+
+<!-- add a "data-coder-template" to use a different template (see the template definitions at the top)
+     add a "data-language" to use a different CodeMirror2 mode other than htmlmixed. Options include "html", "javascript", "css", "xml" and any other mode supported by CodeMirror2
+-->
+<article class='slide slide-list'>
+    <h2>Who Am I?</h2>
+    <h3>David Gurba
+        <span style="margin-left: 1em;font-size: 0.8em">email: dgurba@id.ucsb
+            .edu</span></h3>
+    <p>WSG Co-Chair, Instructional Development - Artworks Web Programmer</p>
+    <h2>What Do I Do?</h2>
+    <p>I code alot of stuff using various tools and computer
+        languages:<br>Bash, Python, Ruby, C++,
+        PHP, MySQL, SQLite, HTML, HTML5 (ha), CSS, CSS3 (ha), ColdFusion,
+        Drupal<br>I
+        can draw stick
+        figures ...</p>
+    <em>The primary hat I wear is that of Coder, I make workflows work,
+        and business logic happen. Design and aesthetics I do delve into but
+        like everyone I'm always learning too!</em>
+</article>
+
+<article class='slide slide-list'>
+    <h2>What is HTML and What is CSS?</h2>
+    <blockquote class="wikipedia-quote">
+        <p><b>HTML</b> or <b>HyperText Markup Language</b> is the standard <a href="http://enwp.org/html/Markup_language" title="Markup language">markup language</a> used to create <a href="http://enwp.org/Web_page" title="Web page">web pages</a>.</p>
+        <p>HTML is written in the form of <a href="http://enwp.org/HTML_element" title="HTML element">HTML elements</a> consisting of <i>tags</i> enclosed in <a href="http://enwp.org/Angle_brackets" title="Angle brackets" class="mw-redirect">angle brackets</a> (like <code>&lt;html&gt;</code>).</p>
+    </blockquote>
+    <blockquote class="wikipedia-quote">
+        <p><b>Cascading Style Sheets</b> (<b>CSS</b>) is a <a href="http://enwp.org//wiki/Style_sheet_language" title="Style sheet language">style sheet language</a> used for describing the <a href="http://enwp.org//wiki/Presentation_semantics" title="Presentation semantics">look and formatting</a> of a document written in a <a href="http://enwp.org//wiki/Markup_language" title="Markup language">markup language</a>. While most often used to style <a href="http://enwp.org//wiki/Web_page" title="Web page">web pages</a> and <a href="http://enwp.org//wiki/Interface_(computing)" title="Interface (computing)">interfaces</a> written in <a href="http://enwp.org//wiki/HTML" title="HTML">HTML</a> and <a href="http://enwp.org//wiki/XHTML" title="XHTML">XHTML</a>, the language can be applied to any kind of <a href="http://enwp.org//wiki/XML" title="XML">XML</a> document, including <a href="http://enwp.org//wiki/Plain_Old_XML" title="Plain Old XML">plain XML</a>, <a href="http://enwp.org//wiki/Scalable_Vector_Graphics" title="Scalable Vector Graphics">SVG</a> and <a href="http://enwp.org//wiki/XUL" title="XUL">XUL</a>. CSS is a cornerstone specification of <a href="http://enwp.org//wiki/The_web" title="The web" class="mw-redirect">the web</a> and almost all web pages use CSS style sheets to describe their presentation.</p>
+    </blockquote>
+</article>
+
+
+
+<article class='slide slide-list'>
+    <h2>CSS REVIEW</h2>
+    <iframe width="100%" style="min-height: 30em;"
+            src="http://pumpula.net/p/apps/css-vocabulary/"></iframe>
+</article>
+
+<article class="slide slide-list">
+    <h2>Practicing CSS Selectors</h2>
+    <h3><a href="http://flukeout.github.io/" target="_blank">CSS Plates
+        Game!</a></h3>
+    <p>Levels 15 and onward cover CSS3 selectors, you may jump to level 15 by
+        simply
+        typing:<br><code>15 [Enter]</code><br>at the interactive prompt.
+        The whole game should take you ~5 minutes if you know CSS.</p>
+<pre style="font-size: 12px; display: none; width: 60%">
+       15.  orange:first-child
+       16.  plate :only-child
+       17.  .small:last-child
+       18.  plate:nth-child(3)
+
+       /* (4?, this 1 breaks sometimes) */
+       19.  div.table bento:nth-last-child(2)
+       /* (bento, 4th item in PARENT container) */
+       20.  bento:nth-last-child(4)
+       20.  apple:first-of-type
+       21.  plate:nth-of-type(even)
+       22.  plate:nth-of-type(2n+3)
+       23.  plate apple:only-of-type
+       24.  .small:last-of-type
+       25.  bento:empty
+       /* (not .small is not enough, leaves plates.) */
+       26.  :not(.small, plate)
+</pre>
+</article>
+
+<article class="slide slide-list">
+    <h2>So What is CSS and CSS3?</h2>
+    <ul>
+        <li>
+            <a href="http://www.w3.org/Style/CSS/current-work.en.html"
+       target="_blank">CSS(3) is a Spefication</a>.
+                It&apos;s assumed the reading audience is versed in digital imaging lingo and Design terminology in multimedia.</a>
+        </li>
+        <li>
+            <a href="http://www.w3.org/Style/CSS/members" target="_blank">CSS is developed by a Working Group.</a>
+        </li>
+        <li>New for the CSS3 Specification is that they&apos;ve broken up the
+            specification into <em>Modules</em>, prior to this it was 1 big ugly file with subsections.</li>
+        <li>Being a Specification, Web Browsers slowly implement the
+            listed features over time. In order to see what aspects of
+            CSS3 are supported in Browsers it can be useful to use
+            website tools such as <a
+                    href="http://caniuse.com/#search=border-radius"
+                    target="_blank">CanIUse</a></li>
+        <li>An Example of a small section of the CSS3 Spec TOC,
+            <a href="http://www.w3.org/TR/css3-background/" target="_blank"
+                    >Backgrounds</a></li>
+        <li>The <a href="http://www.w3.org/TR/css3-background/#the-border-radius" target="_blank">Border-Radius</a> Entry for CSS3 Working Draft.</li>
+        <li>There are other respected <a href="http://www.w3schools.com/css/css3_gradients.asp" target="_blank">resources</a> as well, Google is your friend.</li>
+    </ul>
+</article>
+
+<article class="slide slide-list">
+    <h2>What Does CSS3 Add to CSS?</h2>
+    <p>This is why we're here! Congrats on getting this far!</p>
+    <p>CSS3 is backwards compatible, adding it to your source code will
+        not break your page [unless you have a syntax error].</p>
+    <ul>
+        <li>New Combinator</li>
+        <li>New CSS Selectors</li>
+        <li>New Pseudo Elements</li>
+        <li>New Style Properties</li>
+        <li>Media Queries</li>
+        <li>CSS Print Profiles</li>
+    </ul>
+</article>
+
+<article class="slide slide-list">
+    <h2>New Combinator</h2>
+    <strong>&nbsp;~&nbsp;The General Sibling Selector</strong>
+    <p>Prior to CSS3 there was a child, descendant and adjacent sibling
+        selectors.</p>
+<textarea class='coder-editor'>
+<style type="text/css">
+p ~ p { font-weight: bold; }
+div ~ p { color: orange; }
+</style>
+<h2>Example</h2>
+<div>
+<p>Line One</p>
+<p>Line Two</p>
+<div>Box</div>
+<p>Line Three</p>
+</div>
+</textarea>
+</article>
+
+<article class="slide slide-list">
+    <h2>New CSS Selectors</h2>
+    <p>3 new substring matching attribute selectors:
+        <ul>
+          <li>[attr^=val] - the 'begins with' selector</li>
+          <li>[attr$=val] - the 'ends with' selector</li>
+          <li>[attr*=val] - the 'contains' selector</li>
+        </ul>
+    </p>
+    <h3>Exercise</h3>
+    <p>See the <a href="./tasks/substring.html" target="_blank">Substring.html</a> file and attempt to use substring attribute matching to alter the display of various links used in the file.</p>
+    <p>Tip: you may find it helpful to simply Save the linked file to your desktop and work on it there using Notepad or Notepad++.</p>
+</article>
+
+<article class="slide slide-list">
+    <h2>New CSS3 Psuedo-Classes</h2>
+    <pre style="font-size:0.8em">
+:root – used for the root element, which in HTML is always <html>.
+
+:nth-child(n), :nth-last-child(n), :nth-of-type(n), :nth-last-of-type(n), :last-child, :first-of-type, :last-of-type, :only-child, :only-of-type – these are used to match child and sibling elements based on their order of appearance.
+
+:empty – matches the element that has no children
+:target – matches the element that is the target of the referring URI
+:enabled, :disabled, :checked, – use these to select the element when it’s enabled, disabled, and checked, respectively
+:not(s) – this negation pseudo-classes is used when you need to match an element that does not match the simple selector
+    </pre>
+    <p>We covered nearly all of these in the Plates CSS app!</p>
+</article>
+
+<article class="slide slide-list">
+    <h2>New CSS3 Psuedo-Elements</h2>
+<p> While pseudo-classes and pseudo-elements might look similar, their function
+    is different.</p>
+<p>Pseudo-classes are used to access information that lies outside the document tree. For example, in the document tree we define a link selector but the tree doesn’t give information if the link is <strong>:active</strong>, <strong>:visited</strong>, etc. We can do
+    this with the help of pseudo-classes. With pseudo-elements you can create abstractions about the document tree beyond those specified by the document language (i.e. use <strong>::before</strong> or <strong>::after</strong> pseudo-elements).</p>
+<p>In CSS3 pseudo-elements are identified by <strong>::</strong> and
+    pseudo-classes by <strong>:</strong> only.</p>
+ <p>This can be very confusing because in CSS 1 and 2 pseudo-elements were
+    identified by single colon (<strong>:</strong>), i.e. <strong>:before</strong> and <strong>:after</strong> and for compatibility reasons browsers do accept this but for         the new pseudo-elements in CSS3 this is not valid, so you need to use double
+     colon (<strong>::</strong>).
+</p>
+<p>This is an important distinction because when you use CSS you want to make sure it is valid, <a href="http://jigsaw.w3.org/css-validator/#validate_by_uri+with_options" target="_blank">Validating CSS files</a>,
+    As a designer you need to know what version of CSS the file your writing is written for to validate it and what your intended device and user audience is.</p>
+</article>
+
+<article class="slide slide-list">
+    <h2>New Pseudo-Elements</h2>
+    <pre style="font-size: 0.8em">
+::first-line
+::first-letter
+::before
+::after
+    </pre>
+<h3>Exercise - use file <a href="./tasks/pseudo-elements.html" target="_blank">Pseudo Elements</a></h3>
+<ul>
+<li> Similar to a news paper column, make the first letter of a paragraph very large.</li>
+<li>Make the 1st sentance of a paragraph have emphasis.</li>
+<li>Make a quote using &lt;backquote&gt; element and include the quote symbol
+    using ::before and content: psuedo-elements.<img src="./tasks/img/blockquote-desired-output.png"/></li>
+</article>
+
+<!--::NewStyles-->
+<article class="slide slide-list">
+    <h2>New Style Properties and Values</h2>
+    <ul>
+      <li>Cursors</li>
+      <li>Backgrounds</li>
+      <li>Borders</li>
+      <li>Color</li>
+      <li>Font</li>
+      <li>Gradient</li>
+      <li>Shadow</li>
+      <li>Text</li>
+      <li>Also: Animations, Transforms and Transitions ... these are Mathy and very difficult to explain and understand.</li>
+    </ul>
+</article>
+
+<!--::Cursors-->
+<article class="slide slide-list">
+  <h2>New CSS3 Cursors (you know, the visual UI of the Mouse)</h2>
+</article>
+<article class="slide slide-list">
+ <h2>CSS2 Cursors</h2>
+            <pre style="cursor:auto;margin:1px 0;border: 1px solid #000">cursor: auto</pre>
+            <pre style="cursor:inherit;margin:1px 0;border: 1px solid #000">cursor: inherit</pre>
+            <pre style="cursor:crosshair;margin:1px 0;border: 1px solid #000">cursor: crosshair</pre>
+            <pre style="cursor:default;margin:1px 0;border: 1px solid #000">cursor: default</pre>
+            <pre style="cursor:help;margin:1px 0;border: 1px solid #000">cursor: help</pre>
+            <pre style="cursor:move;margin:1px 0;border: 1px solid #000">cursor: move</pre>
+            <pre style="cursor:pointer;margin:1px 0;border: 1px solid #000">cursor: pointer </pre>
+            <pre style="cursor:progress;margin:1px 0;border: 1px solid #000">cursor: progress</pre>
+            <pre style="cursor:text;margin:1px 0;border: 1px solid #000">cursor: text</pre>
+            <pre style="cursor:wait;margin:1px 0;border: 1px solid #000">cursor: wait</pre>
+            <pre style="cursor:e-resize;margin:1px 0;border: 1px solid #000">cursor: e-resize</pre>
+            <pre style="cursor:ne-resize;margin:1px 0;border: 1px solid #000">cursor: ne-resize</pre>
+            <pre style="cursor:nw-resize;margin:1px 0;border: 1px solid #000">cursor: nw-resize</pre>
+            <pre style="cursor:n-resize;margin:1px 0;border: 1px solid #000">cursor: n-resize</pre>
+            <pre style="cursor:se-resize;margin:1px 0;border: 1px solid #000">cursor: se-resize</pre>
+            <pre style="cursor:sw-resize;margin:1px 0;border: 1px solid #000">cursor: sw-resize</pre>
+            <pre style="cursor:s-resize;margin:1px 0;border: 1px solid #000">cursor: s-resize</pre>
+            <pre style="cursor:w-resize;margin:1px 0;border: 1px solid #000">cursor: w-resize</pre>
+ </article>
+<article class="slide slide-list">
+                    <h2>CSS3 Cursor Styles</h2>
+                    <p>We have more styles to choose from in CSS3. These work in IE9 and the latest versions of Firefox, Chrome, Safari and Opera except where indicated:</p>
+            <pre style="cursor:none;margin:1px 0;border: 1px solid #000">cursor: none (not IE, Safari, Opera)</pre>
+            <pre style="cursor:context-menu;margin:1px 0;border: 1px solid #000">cursor: context-menu (not Firefox, Chrome)</pre>
+            <pre style="cursor:cell;margin:1px 0;border: 1px solid #000">cursor: cell (not Safari)</pre>
+            <pre style="cursor:vertical-text;margin:1px 0;border: 1px solid #000">cursor: vertical-text</pre>
+            <pre style="cursor:alias;margin:1px 0;border: 1px solid #000">cursor: alias (not Safari)</pre>
+            <pre style="cursor:copy;margin:1px 0;border: 1px solid #000">cursor: copy (not Safari)</pre>
+            <pre style="cursor:no-drop;margin:1px 0;border: 1px solid #000">cursor: no-drop</pre>
+            <pre style="cursor:not-allowed;margin:1px 0;border: 1px solid #000">cursor: not-allowed</pre>
+            <pre style="cursor:ew-resize;margin:1px 0;border: 1px solid #000">cursor: ew-resize</pre>
+            <pre style="cursor:ns-resize;margin:1px 0;border: 1px solid #000">cursor: ns-resize</pre>
+            <pre style="cursor:nesw-resize;margin:1px 0;border: 1px solid #000">cursor: nesw-resize</pre>
+            <pre style="cursor:nwse-resize;margin:1px 0;border: 1px solid #000">cursor: nwse-resize</pre>
+            <pre style="cursor:col-resize;margin:1px 0;border: 1px solid #000">cursor: col-resize</pre>
+            <pre style="cursor:row-resize;margin:1px 0;border: 1px solid #000">cursor: row-resize</pre>
+            <pre style="cursor:all-scroll;margin:1px 0;border: 1px solid #000">cursor: all-scroll</pre>
+ </article>
+ <article class="slide slide-list">
+                    <h2>Browser-Specific Cursors</h2>
+                    <p>Mozilla and some editions of Chrome and Safari offer a number of vendor-prefixed cursor styles which are likely to become part of the CSS3 specification:</p>
+            <pre style="cursor:-webkit-grab;cursor:-moz-grab;margin:1px 0;border: 1px solid #000">cursor: -webkit-grab; cursor: -moz-grab;</pre>
+            <pre style="cursor:-webkit-grabbing;cursor:-moz-grabbing;margin:1px 0;border: 1px solid #000">cursor: -webkit-grabbing; cursor: -moz-grabbing;</pre>
+            <pre style="cursor:-webkit-zoom-in;cursor:-moz-zoom-in;margin:1px 0;border: 1px solid #000">cursor: -webkit-zoom-in; cursor: -moz-zoom-in;</pre>
+            <pre style="cursor:-webkit-zoom-out;cursor:-moz-zoom-out;margin:1px 0;border: 1px solid #000">cursor: -webkit-zoom-out; cursor: -moz-zoom-out;</pre>
+ </article>
+ <article class="slide slide-list">
+                    <h2>Creating Your Own Cursor</h2>
+                    <p>Finally, you can create your own cursor graphic, e.g.</p>
+            <pre style="cursor:auto;margin:1px 0;border: 1px solid #000">cursor: url(images/cursor.cur);
+            cursor: url(images/cursor.png) x y, auto;</pre>
+                    <p>Ugly Notes:</p>
+                    <ol>
+                    <li>Internet Explorer requires a Windows cursor file (.cur).</li>
+                    <li>Firefox, Chrome and Safari require an image &#8212; I&#8217;d recommend a 24-bit alpha-transparent PNG.</li>
+                    <li>Firefox also requires a second non-URL cursor fallback value.</li>
+                    <li>It&#8217;s not supported in Opera.</li>
+                    <li>x and y are optional properties in Firefox, Chrome and Safari which define the precise pointer position from the top-left of the graphic. If omitted, 0 0 is assumed.</li>
+            </ol>
+</article>
+
+<!--::Backgrounds-->
+<article class="slide slide-list">
+  <h2>Backgrounds</h2>
+</article>
+
+<article class="slide slide-list">
+<h2>Background Property w/Multiple Images</h2>
+<p>The background property now supports multiple images.</p>
+<p class="desc">The different backgrounds get stacked atop where the first is closest to the viewer. They are separated by commas.</p>
+<p class="cd"><code>background: <strong>url(image1.png)</strong>, <strong>url(image2.png)</strong>, <strong>url(image3.png)</strong> <strong>#666666</strong></code></p>
+<ul>
+<li>The first background image. This is the image that is closest to the viewer. Every background image can have the general values of the <a href="http://www.w3schools.com/css/pr_background.asp" class="c"><code>background</code></a> property, where the most important are <code>background-position</code> and <code>background-repeat</code>. By default they are positioned top left and get repeated at the x- and y-axis.</li>
+<li> The second background image, layered under the first one.</li>
+<li> The third background image which is the lowermost.</li>
+<li> The general background color of the element. Can be only set last, no comma preceded.</li>
+</article>
+
+<article class="slide slide-list">
+<h2>Background Images Example</h2>
+<strong>As an exercise, add a Color to the base background, and play around with the image positioning.</strong>
+<textarea class='coder-editor'>
+<style type="text/css">
+article.first {
+    width: 400;
+    height: 400;
+    background:
+      url("http://lorempixel.com/g/125/75/city/") right bottom no-repeat,
+      url("http://lorempixel.com/g/75/75/sports/") center no-repeat,
+      url("http://lorempixel.com/g/125/75/") no-repeat;
+}
+</style>
+<section id='content'>
+  <article class='first'>
+    <h1>Example Content</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac elit at nisl sagittis consequat sed eget tellus. Aliquam gravida, nunc sit amet viverra dictum, nibh justo semper massa</p>
+  </article>
+</section>
+</textarea>
+</article>
+
+
+<article class="slide slide-list">
+<h2>Old Browsers and CSS3</h2>
+<p>CSS3 is <em>backwards compatible</em>, it won&apos;t break old browsers. It just won&apos;t show what you want most likely. Is there a workaround?</p>
+<strong>See <a href="./tasks/legacy-browser-backgrounds-broken.html" target="_blank">Legacy Browsers and CSS3 file (version 1 broken example)</a> and <a href="./tasks/legacy-browser-backgrounds.html" target="_blank">Legacy Browsers and CSS3 file (version 2)</a> for an example.</strong>
+</article>
+
+<article class="slide slide-list">
+<h2>Background Origin</h2>
+<p class="desc">Defines where the background image(s) is/are positioned.</p>
+<code>background-origin: <strong>padding-box | border-box | content-box </strong></code></p>
+<ul>
+<li><strong>padding-box</strong> When background images are applied they directly start at the outer dimensions of the containing element (= <code>padding-box</code>, default value).</li>
+<li><strong>border-box</strong> If a border is set it covers the background images. Same as padding-box when no border is set.</li>
+<li><strong>content-box</strong> If a padding is set the background image gets applied within it. Same as padding-box when no padding is set, same as padding-box and border-box when no padding and no border are set.</li>
+</ul>
+</article>
+
+<article class="slide slide-list">
+<h2>Background Origin Example</h2>
+<p class="desc">In the following example, play around the with background-origin attributes: padding-box, border-box and content-box. You can try this with multiple background images if you want.</p>
+<textarea class='coder-editor'>
+<style type="text/css">
+    article {
+      padding: 20px 20px;
+      border: 10px solid rgba(255, 0, 0, .5);
+      background: url("http://lorempixel.com/400/200/city/3");
+    background-origin: /*padding-box;*/ border-box;
+      background-size: cover;
+      color: black;
+    }
+</style>
+<section id='content'>
+  <article class='first'>
+    <h1>Example Content</h1>
+    <p>This should be interesting. Yes, absolutely, I do indeed concur, wholeheartedly! Well, that&apos;s certainly good to know. Fate protects fools, little children and ships named Enterprise. Computer, lights up! Smooth as an android&apos;s bottom, eh, Data? Earl Grey tea, watercress sandwiches... and Bularian canapés? Are you up for promotion? I can&apos;t. As much as I care about you, my first duty is to the ship. Mr. Worf, you do remember how to fire phasers? Talk about going nowhere fast.</p>
+  </article>
+</section>
+</textarea>
+</article>
+
+<article class="slide slide-list">
+<h2>Background Size</h2>
+<p class="desc">Used to resize the background image(s).</p>
+<code>background-size: <strong>cover | contain | dimension units </strong></code></p>
+<ul>
+<li><The horizontal size of the background image, such as <code>50%</code> of the width of the element (not of the original image size). Can also be set in absolute (<code>px</code>) or relative (<code>em</code>) units, can be <code>auto</code> (original size, default), <code>cover</code> or <code>contain</code>. In combination with multiple background images the different values are separated by commas.</li>
+<li class="o"><i>Optional.</i> The vertical size of the background image, in this case <code>25%</code> of the height of containing element. If not set it is assumed to be <code>auto</code>.</li>
+</ul>
+</article>
+
+
+<article class="slide slide-list">
+<h2>Background Size Example</h2>
+<p class="desc">In the following example, play around the with background-size attributes trying cover, contain and dimensions. You can try this with multiple background images if you want.</p>
+<textarea class='coder-editor'>
+<style type="text/css">
+    p:first-child {
+        padding: 10px 10px;
+        border: 5px solid red;
+    }
+    article {
+      background: url("http://lorempixel.com/400/200/sports/");
+      background-size: cover;
+      color: white;
+    }
+</style>
+<section id='content'>
+  <article class='first'>
+    <h1>Example Content</h1>
+    <p>Congratulations - you just destroyed the Enterprise. Did you come here for something in particular or just general Riker-bashing? Mr. Crusher, ready a collision course with the Borg ship. I will obey your orders. I will serve this ship as First Officer. And in an attack against the Enterprise, I will die with this crew. But I will not break my oath of loyalty to Starfleet.</p>
+    <p>Well, that&apos;s certainly good to know. Captain, why are we out here chasing comets? We could cause a diplomatic crisis. Take the ship into the Neutral Zone Computer, lights up! For an android with no feelings, he sure managed to evoke them in others. Your shields were failing, sir. When has justice ever been as simple as a rule book? Damage report! Mr. Worf, you sound like a man who&apos;s asking his friend if he can start dating his sister. and attack the Romulans. I guess it&apos;s better to be lucky than good.</p>
+  </article>
+</section>
+</textarea>
+</article>
+
+
+<article class="slide slide-list">
+    <h2>Borders</h2>
+  <p>Two new border properties were added: border-radius and border-image.</p>
+</article>
+
+
+
+<article class="slide slide-list">
+    <h2>Border-Radius</h2>
+  <p>Used to round the corners of an element that has the border or background property set.</p>
+  <p class="cd"><code>border-radius: <strong>8px</strong> / <strong>13px</strong></code></p>
+<ul>
+<li> 1st value The radius of the quarter circles that form the shapes of the corners.</li>
+<li class="o">2nd value <i>(Optional, separated by a slash)</i> The vertical radius, which results in a quarter ellipse when different from the horizontal radius.</li>
+</ul>
+<p>border-radius is short for: border-top-left-radius, border-top-right-radius,
+border-bottom-right-radius, border-bottom-left-radius</p><p>More visual examples can be seen at <a href="http://www.css3files.com/border/" target="_blank">CSS3Files Border section</a>.
+</article>
+
+
+
+<article class="slide slide-list">
+    <h2>Border-Image</h2>
+<p class="cd"><code>border-image: <strong>url(image.png)</strong> <strong>3</strong> /  <strong>5px</strong> <strong>round</strong></code></p>
+<ul>
+<li>The path to the background image file. </li>
+<li>Sets the size of the areas that are taken to draw border. Can consist of up to four values each representing one side of the border. General <a href="http://reference.sitepoint.com/css/shorthandproperties">shorthand rule</a> applys.</li>
+<li class="o"> <i>(Optional, separated by a slash)</i> Border width. Can be different from 2nd value and the <code>border-width</code> property set. General <a href="http://reference.sitepoint.com/css/shorthandproperties">shorthand rule</a> applys.</li>
+<li class="o"><i>(Optional, separated by a slash)</i> Specifies how the image is fitted to the four sides of the border. Possible values are: <code>stretch</code> (default), <code>round</code> and <code>repeat</code> (see examples). If one value is set it is taken for all four sides of the border, with two value the first applys to top/bottom and the second to left/right. This value has no effect on the corners.</li>
+</ul>
+<p>More visual examples can be seen at <a href="http://www.css3files.com/border/" target="_blank">CSS3Files Border section</a> or you can see an example at <a href="http://border-image.com/">BorderImage.com</a>.
+<p><strong>The gist is -- an image can be broken up into quadrents and used as the border for an Element.</p>
+</article>
+
+<article class="slide slide-list">
+    <h2>Fonts</h2>
+  <p>@font-face is now widely supported.</p>
+  <p>Other font properties are in the works but not widely supported: font-stretch, font-size-adjust, font-synthesis, font-kerning, font-variant-caps</p>
+  <p><strong>The next slide shows the @font-face CSS declaration. In the following examples I will likely use <a href="https://www.google.com/fonts">Google Fonts</a> which uses @font-face but does alot of the work for you.</strong></p>
+</article>
+
+<article class="slide slide-list">
+    <h2>@Font-Face</h2>
+<pre class="cd"><code>@font-face {
+    font-family: <strong>"FontName"</strong>;
+    src: <strong>url('fontfile.eot')</strong>;
+    src: <strong>url('fontfile.eot?iefix') format('eot')</strong>,
+    <strong>url('fontfile.svg#FontName') format('svg')</strong>,
+    <strong>url('fontfile.ttf') format('truetype')</strong>,
+    <strong>url('fontfile.woff') format('woff')</strong>;
+}</code></pre>
+<ol>
+<li>The name of the font for the further usage in the stylesheet at the <code>font-family</code> property. If the font should be assigned to all <code>&lt;h2&gt;</code> headlines for example you have to write <code>h2 { font-family: "FontName", sans-serif }</code>. Can be choosen freely.</li>
+<li class="o"><i>Optional.</i> The <code>eot</code> fontfile. Can be omitted if you don`t want to support Internet Explorer prior to version 9 (including semicolon).</li>
+<li class="o"><i>Optional.</i> Can also be omitted for Internet Explorer &lt; 9. <code>?iefix</code> prevents IE6 from interpreting all of the following. If the whole IE family (6 to 9) should be supported, <b class="sm">2</b> and <b class="sm">3</b> are needed.</li>
+<li class="o"><i>Optional.</i> Can be omitted if iPad versions prior to iOS 4.2 shouldn&#8217;t be supported. <code>FontName</code> is the same as at <b class="sm">1</b>.</li>
+<li>The <code>ttf</code> fontfile. Necessary to support (Mobile) Safari and Opera. </li>
+<li>The <code>woff</code> fontfile for all modern browsers (best choice).</li>
+</ul>
+</article>
+
+<article class="slide slide-list">
+<h2>Example: Create a Paper Document.</h2>
+<p>Please see this <a href="./tasks/paper.html" target="_blank">example HTML file</a> and copy and paste it to your Desktop using Notepad. Then edit the file and attempt to make the Header one google font, and the body text another Google Font. Then use this <a href="./tasks/paper-bg.png" target="_blank">image</a> to use border-image to the content of the page that looks like a paper document.</p>
+</article>
+
+<article class="slide slide-list">
+    <h2>Shadows</h2>
+  <p>CSS3 added the ability to shadow elements and text, using box-shadow and text-shadow</p>
+</article>
+
+<article class="slide slide-list">
+    <h2>Box-Shadow</h2>
+  <p class="desc">Multiple shadows can be assinged comma separated.</p>
+<p class="cd"><code>box-shadow: <strong>inset</strong> <strong>4px</strong> <strong>4px</strong> <strong>16px</strong> <strong>10px</strong> <strong>#000</strong></code></p>
+<ol>
+<li class="o"><i>Optional.</i> When set the shadow is drawn inside the element and will be no drop shadow. When both the offset values are positive the shadow runs from top left to bottom right. When negative it starts at the bottom right corner.</li>
+<li> The horizontal offset of the shadow (x-axis). If positive the shadow is drawn to the right side of the element, if negative it is drawn to the left side.</li>
+<li>The vertical offset of the shadow (y-axis). If positive the shadow is drawn below the element, if negative it is drawn above.</li>
+<li class="o"><i>Optional.</i> The blur radius defines how big and how much blurred the shadow is. The larger this value, the lighter the shadow. Negative values are not allowed. If not set the shadow&#8217;s edges are sharp (which corresponds to a value of <code>0</code>).</li>
+<li class="o"><i>Optional.</i> The spread distance makes the shadow bigger in all directions. The shadow is expanded by the given value. Negative values cause the shadow to contract (not depicted).</li>
+<li>The color of the shadow. <code>rgba</code><code>hsla</code> color values are possible.</li>
+</ol>
+</article>
+
+<article class="slide slide-list">
+    <h2>Box Shadow Examples</h2>
+<textarea class='coder-editor'>
+<style type="text/css">
+    div.box { width: 100px; height: 100px;
+        background-color: orange; margin: 40px 40px;
+        color: white; padding: 5px 5px; }
+
+
+    .style1 {
+      box-shadow: inset 4px 4px 16px 10px #000;
+    }
+    .style2 {
+      box-shadow: -5px 5px 15px 7px #000;
+    }
+    .style3 {
+      box-shadow: inset 6px 6px 12px #000;
+    }
+    .style4 {
+      /* what could you put here? */
+    }
+
+</style>
+<section id='content'>
+  <div class="box style1">Hello1</div>
+  <div class="box style2">Hello2</div>
+  <div class="box style3">Hello3</div>
+  <div class="box style4">Hello4</div>
+</section>
+</textarea>
+</article>
+
+
+<article class="slide slide-list">
+    <h2>Text-Shadow</h2>
+  <p>Is used to assign one or more shadows to text.</p>
+<p class="desc">Multiple shadows can be assinged comma separated.</p>
+<p class="cd"><code>text-shadow: <strong>4px</strong> <strong>4px</strong> <strong>14px</strong> <strong>#969696</strong></code></p>
+<ol>
+<li>The horizontal offset of the shadow (x-axis). If positive the shadow is drawn to the right side of the text, if negative it is drawn to the left side.</li>
+<li> The vertical offset of the shadow (y-axis). If positive the shadow is below the text, if negative it is drawn above.</li>
+<li class="o"><i>Optional.</i> The blur radius defines how big and how much blurred the shadow is. The larger this value, the lighter the shadow. Negative values are not allowed. If not set the shadow&#8217;s edges are sharp (which corresponds to a value of <code>0</code>).</li>
+<li> The color of the shadow. Any CSS color type is allowed hsla(), rgb() etc.</li>
+</ol>
+</article>
+
+
+<article class="slide slide-list">
+    <h2>Text Shadow Examples</h2>
+<textarea class='coder-editor'>
+<style type="text/css">
+    div.box { width: 500px; height: 100px;
+        margin: 40px 40px;
+        color: red; padding: 5px 5px; font-size: 40px; }
+
+
+    .style1 {
+      /* head on shadow */
+      text-shadow: 4px 4px 14px #969696;
+    }
+    .style2 {
+      /* shadow above and to the left */
+      text-shadow: -5px -5px 12px #969696;
+    }
+    .style3 {
+      /* Add your own shadow */
+    }
+    .style4 {
+      /* Add your own shadow(s) */
+    }
+    .style5 {
+    /* Neon Text Affect */
+    color: white !important;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 50px 50px !important;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    .style6 {
+      background: #474747;
+      color: #222222 !important;
+      font-size: 100px !important;
+      font-family: Courier;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-shadow: 0px 2px 3px #666;
+    }
+
+</style>
+<section id='content'>
+  <div class="box style1">H</div>
+  <div class="box style2">T</div>
+  <div class="box style3">Y</div>
+  <div class="box style4">Z</div>
+  <div class="box style5">hot lava</div>
+  <div class="box style6">INSET</div>
+</section>
+
+
+<!--
+The inset or letterpress style text effect is one of the more common uses of
+ text-shadow. The shadow is offset on the Y-axis by a tiny amount to give
+  the impression of a subtle highlight. On dark backgrounds offset the
+  shadow underneath the text with a light colour, whereas on light
+  backgrounds offset to the top of the text with a darker shadow colour.
+-->
+</textarea>
+</article>
+
+<article class="slide slide-list">
+    <h2>Opacity</h2>
+  <p>CSS3 supports Opacity as a property to an element. it is simply a value between 1.0 and 0. Eg, .5 would be 50% see-through, .65 would be 65% transparent, etc.</p>
+</article>
+
+
+<article class="slide slide-list">
+    <h2>Example: Use Text Affects to theme a List of Items</h2>
+  <p>Use this <a href="./tasks/text-affects.html">HTML file</a> as a starting point to create a menu overlayed an image with a transparent color background. These example output could help you.<img src=""/></p>
+  <img src="./tasks/img/text-nav-specs.png"/>
+  <img src="./tasks/img/text-nav-colors.png"/>
+</article>
+
+<article class="slide slide-list">
+    <h2>Example: Style a thumbnail gallery.</h2>
+  <p>Use this <a href="./tasks/gallery-image-clipping.html">HTML file</a> as a starting point of a simple thumbnail gallery. Attempt to make the gallery not just square images. At this point you should be able to add for instance rounded corners to the pictures, or make them appear to be inset into the page.</p>
+  <p><strong>Why is it good we can do this now using CSS3?</strong></p>
+</article>
+
+<article class="slide slide-list">
+    <h2>Text Properties</h2>
+  <p>Text properties had alot of additions in CSS3. I will likely not review them all. They consist of: text-align-last, text-decoration-line, text-decoration-skip, text-decoration-position, text-decoration-style, text-emphasis, text-justify, text-orientation, text-overflow and text-shadow</p>
+  <p>Earlier we covered text-shadow.</p>
+</article>
+
+<article class="slide slide-list">
+    <h2>Media Queries</h2>
+    <a href="http://www.w3.org/TR/css3-mediaqueries/" target="_blank">W3C
+        Spec on Mediaqueries</a> also see <a href="http://mediaqueri.es/" target="_blank">MediaQueri.es</a>
+
+    <blockquote>Consists of a media type and zero or more expressions that check for the conditions of particular media features. Among the media features that can be used in media queries are ‘width’, ‘height’, and ‘color’. P presentations can be tailored to a specific range of output devices without changing the content itself.</blockquote>
+</article>
+
+<article class="slide slide-list">
+    <h2>A baby example of Media Queries</h2>
+  <p>This sample <a href="./tasks/responsive.html" target="_blank">HTML file</a> uses Media queries. Examine it and see how it collapses, the rules, etc.</p>
+</article>
+
+<article class="slide slide-list">
+    <h2>Example Media Queries</h2>
+    <p>The following is from a Drupal settings file for a website being
+        developed for a campus project:
+        <pre>
+settings[bigscreen_media_query] = only screen and (min-width:1025px)
+
+settings[tablet_landscape_media_query] = only screen and (min-width:769px) and (max-width:1024px)
+
+settings[tablet_portrait_media_query] = only screen and (min-width:581px) and (max-width:768px)
+
+settings[smalltouch_landscape_media_query] = only screen and (min-width:321px) and (max-width:580px)
+
+settings[smalltouch_portrait_media_query] = only screen and (max-width:320px)
+        </pre>
+    </p>
+    <p>This settings file convention is the <em>Layout Name</em> <strong>
+        =</strong> <em>Media Query expressions</em> used to activate the rulesets.</p>
+    <p>Typically, either in <strong>code</strong> or your CSS file
+        filename you try to organize your responsive css files by
+        descriptive name.</p>
+</article>
+
+
+<article class="slide slide-list">
+    <h2>A Bigger Media Query, Responsive Design Example</h2>
+  <p>This is a website in the works, <a href="http://demo02.id.ucsb.edu/" target="_blank">demo02.id.ucsb.edu</a>. This site is Responsive. There are some behaviors on the site that are not great for mobile devices, can we fix: 1) The extra items appearing in the menus for mobile devices. 2) Hide the &quot;Section Image&quot; displayed per section on Mobile to save bandwidth.</p>
+<p>Other things we could do: 1) Add an inset or box-shadow to the gallery. Assign additional Google fonts someplace.</p>
+</article>
+
+
+<article class="slide slide-list">
+    <h2>&lt;/Presentation&gt;</h2>
+  <p>Thank you all for attending this session. I hope you walk away learning something new about CSS3. Questions and comments please contact me at dgurba@id.ucsb.edu. I also recommend attending the Web Standards Group sessions!</p>
+</article>
+
+<script src='dist/coderdeck.min.js'></script>
+
+<script>
+    $(function() {
+        $.deck('.slide');
+    });
+</script>
+</body>
+</html>

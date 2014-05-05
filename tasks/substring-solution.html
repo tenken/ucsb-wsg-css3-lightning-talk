@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Substring Task</title>
+<style>
+p::first-letter {
+  font-size: 40px;
+}
+a[href*=ucsb] {
+  font-weight: bold;
+  color: #0039A6;
+  border-bottom: 3px solid orange;
+  cursor: help;
+  text-decoration: none;
+}
+
+a[href$=pdf] {
+  display: inline-block;
+  padding-left:20px;
+  background: transparent url("./img/pdflink.gif") center left no-repeat;
+}
+
+a[href^=http] {
+  display: inline-block;
+  padding-right: 14px;
+  background: transparent url("./img/extlink.gif") center right no-repeat;
+}
+</style>
+</head>
+<body>
+<h1>Substring Tasks</h1>
+<p class="directions">
+In the following section of text make the following alterations:
+<ul>
+<li>Make any link with the text "ucsb" in it 1 of the UCSB color(s): #0039A6, #00338E, #FFC82E </li>
+<li>In all http:// links below make the external gif (<img src="http://demo01.id.ucsb.edu/tasks/img/extlink.gif"/>)appear after the link.<br> this file is at http://demo01.id.ucsb.edu/tasks/img/extlink.gif</li>
+<li>In all links below ending in pdf make the pdf icon appear (<img src="http://demo01.id.ucsb.edu/tasks/img/pdflink.gif"/>).<br>This file is at http://demo01.id.ucsb.edu/tasks/img/pdflink.gif</li>
+</ul>
+</p>
+<h2>Sample Content</h2>
+<p class="task">
+Commander William Riker of the Starship Enterprise. Sure. You'd be surprised how far a hug goes with Geordi, or Worf. Well, I'll say this for him - he's sure of himself. In all trust, there is the possibility for betrayal. A lot of things can change in twelve years, Admiral. I've had twelve years to think about it. And if I had it to do over again, I would have grabbed the <a href="//foo.html">phaser and pointed</a> it at you instead of them. My oath is between Captain Kargan and myself. Your only concern is with how you obey my orders. Or do you prefer the rank of prisoner to that of <a href="http://www.ucsb.edu/">lieutenant</a>? Smooth as an android's bottom, eh, Data? Ensign Babyface! When has justice ever been as simple as a rule book?
+</p>
+<p>
+<a href="http://www.ucla.edu/">Mr. Worf</a>, you sound like a man who's asking his friend if he can start dating his sister. Captain, why are we out here chasing comets? How long can two people talk about nothing? I'd like to think that I haven't changed those things, sir. Mr. Worf, you do remember how to fire <a href="/path/to/some/file.pdf">phasers?</a> I'll be sure to note that in my log. And blowing into maximum warp speed, you appeared for an instant to be in two places at once. Your shields were failing, sir. Computer, <a href="/path/to/some/file.pdf">lights up!</a> I recommend you don't fire until you're within 40,000 kilometers. Wait a minute - you've been declared dead. You can't give orders around here. I suggest you drop it, Mr. Data.
+</p>
+</body>
+</html>

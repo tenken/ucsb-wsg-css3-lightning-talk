@@ -1,0 +1,9 @@
+blockquote.wikipedia-quote::before {
+    content: 'Wikipedia';
+    position: absolute;
+    margin: -1.3em -1.7em;
+}
+
+.deck-container .coder-editor-wrapper pre {
+  font-size: 12px !important;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gallery Demo -- Image Clipping</title>
+  <style type="text/css">
+ <style>
+    /* default css rules */
+    #gallery { width: 50%; margin: 0 25% 0 25%; height: 50%;}
+    div.art-sample {
+      float: left;
+      display: inline;
+      padding: 10px 10px;
+    }
+
+    /* Add clipping to all images to round the corners. I mean round the image corners ... */
+    div.art-sample img {
+      border: 2px solid black;
+      border-radius: 30px;
+      -moz-border-radius: 30px;
+      -khtml-border-radius: 30px;
+      -webkit-border-radius: 30px;
+    }
+
+    /* Add a gradient background to the art-sample boxes. You may want to see
+    http://www.colorzilla.com/gradient-editor/ */
+    div.art-sample {
+background: #b3dced; /* Old browsers */
+background: -moz-linear-gradient(top, #b3dced 0%, #29b8e5 50%, #bce0ee 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b3dced), color-stop(50%,#29b8e5), color-stop(100%,#bce0ee)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* IE10+ */
+background: linear-gradient(to bottom, #b3dced 0%,#29b8e5 50%,#bce0ee 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=0 ); /* IE6-9 */
+    }
+
+    /* Add a custom Cursor effect on every other art-sample. */
+    div.art-sample:nth-child(odd) { cursor: url("http://i.stack.imgur.com/AOPkN.png") 5 5, auto;  }
+
+    div.inset img {
+      box-shadow: inset 6px 6px 12px #ccc;
+      padding: 8px 8px;
+      border: none;
+      border-radius: none;
+      background: none;
+    }
+  </style>
+</head>
+<body>
+<h1>Sample Art Gallery of Cars</h1>
+<div id="gallery">
+  <div class="art-sample">
+    <img src="http://lorempixel.com/100/100/cats/"/>
+  </div>
+  <div class="art-sample">
+    <img src="http://lorempixel.com/100/100/city/"/>
+  </div>
+  <div class="art-sample">
+    <img src="http://lorempixel.com/100/100/cats/"/>
+  </div>
+  <div class="art-sample">
+    <img src="http://lorempixel.com/100/100/city/"/>
+  </div>
+  <div class="art-sample">
+    <img src="http://lorempixel.com/100/100/nature/"/>
+  </div>
+  <div class="art-sample">
+    <img src="http://lorempixel.com/100/100/city/"/>
+  </div>
+  <div class="art-sample">
+    <img src="http://lorempixel.com/100/100/food/"/>
+  </div>
+  <div class="art-sample">
+    <img src="http://lorempixel.com/100/100/city/"/>
+  </div>
+  <div style="display: block; clear: both; padding: 10px 10px;">
+    <div class="inset">
+      <img src="http://lorempixel.com/100/100/sports/"/>
+    </div>
+    <div class="inset">
+      <img src="http://lorempixel.com/100/100/sports/"/>
+    </div>
+  </div>
+</div>
+</body>
+</html>

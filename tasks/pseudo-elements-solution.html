@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Psuedo Elements</title>
+  <style type="text/css">
+    <!-- You can add your CSS rules here. -->
+    h2::first-letter {
+      color: blue !important;
+    }
+    p::first-line {
+      font-style: italic;
+    }
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  line-height: 1.3em;
+/*  quotes: "\201C""\201D""\2018""\2019"; */
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 2em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+/*
+blockquote:after {
+  content: close-quote;
+  position: bottom right;
+  color: #ccc;
+  padding-left: 0.5em;
+  font-size: 2em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+*/
+blockquote p {
+  display: inline;
+}
+  </style>
+</head>
+<body>
+<h2>Directions</h2>
+<div class="directions">Play around with the pseudo selectors in the below content. Remember they are :before, :content, ::first-letter and ::first-line for CSS3.</div>
+<h2>Sample Header1</h2>
+<p>
+The Enterprise computer system is controlled by three primary main processor cores, cross-linked with a redundant melacortz ramistat, fourteen kiloquad interface modules. Some days you get the bear, and some days the bear gets you. The Federation's gone; the Borg is everywhere!
+</p>
+<h2>Sample Header2</h2>
+<p>
+And blowing into maximum warp speed, you appeared for an instant to be in two places at once. I'll alert the crew. But the probability of making a six is no greater than that of rolling a seven. Maybe we better talk out here; the observation lounge has turned into a swamp. Computer, belay that order. I've had twelve years to think about it. And if I had it to do over again, I would have grabbed the phaser and pointed it at you instead of them.
+</p>
+<blockquote>My oath is between Captain Kargan and myself. Your only concern is with how you obey my orders. Or do you prefer the rank of prisoner to that of lieutenant? I recommend you don't fire until you're within 40,000 kilometers. &mdash; Commander William Riker</blockquote>
+</body>
+</html>
